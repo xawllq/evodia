@@ -1,0 +1,343 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fomndo.png'); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+ } 
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+.cart a {
+    text-decoration: none;
+    color: #bfab72;
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 5px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #bfab72;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones de contenido */
+main {
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.welcome-section h1 {
+    color: #bfab72;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    color: #bfab72;
+}
+
+.image-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.image-box h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.promo-image {
+    width: 100%;
+    max-width: 1920px;
+    height: 510px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.feature {
+    text-align: center;
+    width: 150px;
+}
+
+.feature-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #bfab72;
+}
+
+.about-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #bfab72;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    color: #bfab72;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #bfab72;
+}
+
+/* Sección de productos */
+.product-gallery {
+    color: #bfab72;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-card {
+    background-color:#191919;;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-weight: bold;
+    color: #bfab72;
+}
+
+.product-card button {
+    background-color: #bfab72;
+    color: #191919;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.product-card button:hover {
+    background-color: #a89765;
+}
+
+.contact-section {
+    padding: 50px;
+    background-color: #000000;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #bfab72;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    color: #bfab72;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #191919;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #191919;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bfab72;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #444;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #bfab72;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #a89765;
+}
+
+.contact-info {
+    margin-top: 40px;
+    text-align: left;
+    font-size: 1.1em;
+    color: #000000;
+}
+
+.contact-info h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-media li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.social-media a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #000000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    background-color: #191919;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    color: #bfab72;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}

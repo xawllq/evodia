@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evodia </title>
+    <link rel="stylesheet" href="stc.css">
+    <link rel="icon" type="image/png" href="evodia p.png">
+</head>
+<body>
+
+    <button id="igBtn" style="display: none; margin-top: 10px; background-color: #833AB4; color: white; padding: 8px 12px; border: none; border-radius: 6px; cursor: pointer;">
+        Enviar por Instagram
+    </button>
+
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="evodia logo.png" alt="Logo Tienda" id="logo">
+            </div>
+            <div class="cart">
+                <a href="#" id="cart"> Carrito (0)</a>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="evodia.html">Inicio</a></li>
+                <li><a href="productos.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-gallery">
+
+            <div class="product-card"
+            data-img="vs pourh.png"
+            data-title="Versace Pour Homme"
+            data-price="899"
+            data-description="Fragancia fresca, masculina y sofisticada de Versace. Ideal para el día.">
+       
+           <img src="vs pourh.png" alt="Versace">
+           <h3>Colonia - Versace Pour Homme</h3>
+           <p>$899 MXN</p>
+           
+           <button class="add-to-cart"
+                   data-name="Colonia - Versace Pour Homme"
+                   data-price="899">
+               Agregar al carrito
+           </button>
+           </div>
+
+           <div class="product-card"
+           data-img="ga acqua .png"
+           data-title="Giorgio Armani Acqua di gio profondo"
+           data-price="2200"
+           data-description="Fragancia marina , masculina y veraniega de Giorgio de Armani. Ideal para días calurosos .">
+
+          <img src="ga acqua .png" alt="Giorgio Armani">
+          <h3>Colonia - Giorgio Armani Acqua di gio profondo</h3>
+          <p>$2200 MXN</p>
+
+          <button class="add-to-cart"
+          data-name="Colonia - Giorgio Armani Acqua di gio profondo"
+          data-price="2200">
+           Agregar al carrito
+          </button>
+
+          </div>
+
+          <div class="product-card"
+          data-img="yvsl pf.png"
+          data-title="Yves Saint Laurent Eau de Parfum "
+          data-price="2400"
+          data-description="Fragancia fresca , masculina y sofisticada de Yves Saint Laurent. Ideal para el dia a dia .">
+         <img src="yvsl pf.png" alt="Yves Saint Laurent">
+         <h3>Colonia - Yves Saint Laurent Eau de Parfum</h3>
+         <p>$2400 MXN</p>
+         <button class="add-to-cart"
+          data-name="Colonia - >Yves Saint Laurent Eau de Parfum"
+          data-price="2400">
+           Agregar al carrito
+          </button>
+         </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Waxlnk - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+<div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImg" src="" alt="Producto" style="max-width: 100%; border-radius: 8px;">
+      <h3 id="modalTitle"></h3>
+      <p id="modalPrice"></p>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+        <span class="close-cart"></span>
+        <h3>Tu Carrito</h3>
+        <div id="cartItems"></div>
+        <p id="cartTotal"><strong>Total:</strong> $0 MXN</p>
+
+        <button id="whatsappBtn" style="display: none; margin-top: 10px; background-color: #bfab72; color: #191919; padding: 8px 12px; border: none; border-radius: 6px; cursor: pointer;">
+            Sigue tu compra
+        </button>
+    
+    </div>
+</div>
+
+</body>
+</html>

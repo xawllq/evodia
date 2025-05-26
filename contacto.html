@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evoida</title>
+    <link rel="icon" type="image/png" href="evodia p.png">
+    <link rel="stylesheet" href="stc.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="evodia logo.png" alt="Logo Tienda" id="logo">
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="evodia.html">Inicio</a></li>
+                <li><a href="productos.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna duda o pregunta? ¡Estamos aquí para ayudarte! Rellena el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+
+            <form action="submit_contact_form.php" method="POST" class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Información de contacto</h3>
+                <p><strong>Dirección:</strong> Calle Ejemplo 123, Ciudad, País</p>
+                <p><strong>Teléfono:</strong> +52 123 456 7890</p>
+                <p><strong>Email:</strong> contacto@evodia.com</p>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Evodia - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
